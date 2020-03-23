@@ -8,27 +8,27 @@ spring:
 server:
   port: 8201
 
-spring:
+spring: 
   profiles: dev
-  application:
+  application: 
     name: springcloud-config-client
 
-eureka:
-  client:
-    service-url:
+eureka: 
+  client: 
+    service-url: 
       defaultZone: http://127.0.0.1:7001/eureka/
 
 #config测试客户端配置信息
 ---
-server:
-  prot: 8020
+server: 
+  prot: 8202
 
-spring:
+spring: 
   profiles: test
-  application:
+  application: 
     name: springcloud-config-client
 
-eureka:
-  client:
-    service-url:
+eureka: 
+  client: 
+    service-url: 
       defaultZone: http://127.0.0.1:7001/eureka/
