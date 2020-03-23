@@ -1,17 +1,19 @@
 spring:
   profiles:
-  active:
-  - dev
+    active:
+    -dev
+    
+#开发环境
 ---
 spring:
   profites: dev
-  #开发环境
   application:
     name: springcloud-config-dev
+
+#测试环境
 ---
 spring:
   profiles: test
-  #测试环境
   application:
     name: springcloud-config-test
     #请保存为UTF-8格式
